@@ -146,7 +146,7 @@ const page = () => {
       className="h-[40rem] w-full flex items-center justify-center mb-16"
     >
       <PinContainer title={website.title} href={website.href}>
-        <div className="flex flex-col sm:flex-row w-[90vw] md:w-[60rem] xl:w-[70rem] h-[40rem] sm:w-[50rem] sm:h-[30rem] p-8 bg-gray-800 rounded-lg shadow-2xl border-[3px] border-silver-400">
+        <div className="flex flex-col sm:flex-row w-[90vw] md:w-[60rem] xl:w-[70rem] h-[40rem] sm:w-[50rem] sm:h-[30rem] p-8 bg-gray-800 rounded-lg shadow-2xl border-[2px] border-silver-400">
           <div className="flex flex-col justify-between sm:w-1/2">
             <h3 className="font-bold text-3xl text-slate-100 mb-6">
               {website.title}
