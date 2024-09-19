@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { TypewriterEffectSmooth } from "./typewriter-effect";
+import { BackgroundBeamsWithCollision } from "./background-beams-with-collision";
 
 export const HeroParallax = ({
   products
@@ -28,9 +29,15 @@ export const HeroParallax = ({
 
  
   return (
-    (<div
+    (
+   <BackgroundBeamsWithCollision>
+
+  
+
+  
+    <div
       ref={ref}
-      className="xl:h-[300vh] 2xl:h-[170vh] md:h-[300vh]  bg-slate-100   overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="xl:h-[300vh] 2xl:h-[170vh] md:h-[300vh]  bg-transparent   overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
        <Header/>
       <motion.div
         style={{
@@ -57,7 +64,9 @@ export const HeroParallax = ({
         </motion.div>
       </motion.div>
  
-    </div>)
+    </div>
+    </BackgroundBeamsWithCollision>
+    )
   );
 };
 
@@ -70,7 +79,7 @@ export const Header = () => {
           text: "i'm",
         },
         {
-          text: "Daniel.",
+          text: "Daniel,",
           className: "text-blue-500 dark:text-blue-500",
         },
        
@@ -78,12 +87,20 @@ export const Header = () => {
 
       const words2 = [
         {
-          text: "Front-End",
+          text: "A",
+        },
+        {
+          text: "passionate",
+        },
+        {
+          text: "Frontend",
         },
         {
           text: "Developer",
+          className: "text-blue-500 dark:text-blue-500",
           
         },
+       
 
        
       ];

@@ -9,19 +9,24 @@ import countries from "./images/desktop-preview.jpg";
 import chat from './images/chat.png'
 import phone from './images/phoneT.png'
 import Advice from "./images/advice.jpg";
+import { motion } from "framer-motion";
 
 import Link from "next/link";
 import { FloatingDock } from "./component/ui/floating-dock";
 import {
   IconBrandGithub,
+  IconBrandGmail,
+  IconBrandLinkedin,
   IconBrandX,
   IconExchange,
   IconHome,
   IconNewSection,
+  IconPhone,
   IconTerminal2,
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { Vortex } from "./component/ui/vortex";
+import { BackgroundBeamsWithCollision } from "./component/ui/background-beams-with-collision";
 
 export default function Home() {
 
@@ -31,79 +36,60 @@ export default function Home() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/",
     },
  
     {
-      title: "projects",
+      title: "Projects",
       icon: (
         <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "/projects",
     },
     {
-      title: "Components",
+      title: "Phone +2348100185232",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "tel:+2348100185232", 
     },
+    
     {
-      title: "Aceternity UI",
+      title: "Gmail:chididaniel1998@gmail.com",
       icon: (
-        <Image
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
+        <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "mailto:chididaniel1998@gmail.com", 
     },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+    
+   {
+  title: "Linkedin",
+  icon: (
+    <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  ),
+  href: "https://www.linkedin.com/in/chidi-ugwu-43662423a", 
+},
+
  
     {
       title: "Twitter",
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://x.com/ChidiUg85346290",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/chiditrigga",
     },
   ];
 
 
 
-  const words = [
-    {
-      text: `Build `,
-    },
-    {
-      text: "awesome",
-    },
-    {
-      text: "apps",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "Aceternity.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ];
+
   return (
 
 
@@ -125,20 +111,27 @@ export default function Home() {
 
 
 
+      
 
+       
   
   <HeroParallax products={products} />;
 
 
- 
-  <div className="flex items-center justify-center h-fit w-full bg-slate-100">
-      <FloatingDock
-        mobileClassName="translate-y-20" 
-        items={links}
-      />
-    </div>
-   
   
+  <motion.div
+  initial={{opacity:0,y:100}}
+  animate={{opacity:1,y:0}}
+  transition={{duration:1.5, delay:0.5}}
+  className="fixed bottom-0 left-0 right-0 flex items-center justify-center h-fit w-full bg-transparent">
+  <FloatingDock
+    mobileClassName="translate-y-20" 
+    items={links}
+  />
+</motion.div>
+
+   
+    
   </>
   );
 }
