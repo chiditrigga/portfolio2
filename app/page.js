@@ -125,7 +125,7 @@ export default function Home() {
   transition={{duration:1.5, delay:0.5}}
   className="fixed bottom-0 left-0 right-0 flex items-center justify-center h-fit w-full bg-transparent">
   <FloatingDock
-    mobileClassName="translate-y-20" 
+    mobileClassName="" 
     items={links}
   />
 </motion.div>

@@ -146,7 +146,7 @@ const page = () => {
       className="h-[40rem] w-full flex items-center justify-center mb-16"
     >
       <PinContainer title={website.title} href={website.href}>
-        <div className="flex flex-col sm:flex-row w-[90vw] md:w-[60rem] xl:w-[70rem] h-[40rem] sm:w-[50rem] sm:h-[30rem] p-8 bg-gray-800 rounded-lg shadow-2xl border-[2px] border-silver-400">
+        <div className="flex flex-col sm:flex-row w-[90vw] md:w-[40rem] lg:w-[60rem] xl:w-[70rem] h-[40rem] sm:w-[50rem] sm:h-[30rem] p-8 bg-gray-800 rounded-lg shadow-2xl border-[2px] border-silver-400">
           <div className="flex flex-col justify-between sm:w-1/2">
             <h3 className="font-bold text-3xl text-slate-100 mb-6">
               {website.title}
@@ -188,7 +188,7 @@ const page = () => {
   transition={{duration:1.3}}
   className="fixed bottom-0 left-0 right-0 flex items-center  justify-center h-fit w-full back bg-gray-900 z-50">
   <FloatingDock
-    mobileClassName="translate-y-20 z-50" 
+    mobileClassName=" z-50" 
     desktopClassName='z-50'
     
     items={links}
