@@ -37,7 +37,7 @@ export const HeroParallax = ({
   
     <div
       ref={ref}
-      className="xl:h-[300vh] h-[200vh] 2xl:h-[170vh] md:h-[300vh]  bg-transparent   overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="xl:h-[350vh]  h-[200vh] 2xl:h-[170vh] md:h-[300vh]  bg-transparent   overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
        <Header/>
       <motion.div
         style={{
@@ -80,7 +80,7 @@ export const Header = () => {
         },
         {
           text: "Daniel,",
-          className: "text-blue-500 dark:text-blue-500",
+          className: "text-blue-500 font-extrabold",
         },
        
       ];
@@ -97,7 +97,7 @@ export const Header = () => {
         },
         {
           text: "Developer",
-          className: "text-blue-500 dark:text-blue-500",
+          className: "text-blue-500 font-extrabold",
           
         },
        
@@ -106,7 +106,7 @@ export const Header = () => {
       ];
   return (
     (<div
-      className="max-w-7xl relative mx-auto py-20 md:py-40  px-4 w-full  left-0 top-0">
+      className="max-w-7xl relative mx-auto py-20  md:py-20 z-50  px-4 w-full   left-0 top-0 xl:top-44">
         <TypewriterEffectSmooth words={words} />
         <TypewriterEffectSmooth words={words2} />
         
@@ -127,7 +127,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-[30vh] w-[70vw]  2xl:h-[30vh] 2xl:w-[30vw] lg:h-[40vh] lg:w-[40vw] md:h-[35vh] md:w-[40vw]  relative flex-shrink-0">
+      className="group/product h-[30vh] w-[70vw]  2xl:h-[30vh] 2xl:w-[30vw] xl:h-[50vh] lg:h-[40vh] lg:w-[40vw] md:h-[35vh] md:w-[40vw]  relative flex-shrink-0">
         
       <Link href={product.link} className="block group-hover/product:shadow-2xl ">
         <Image

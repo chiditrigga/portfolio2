@@ -135,7 +135,7 @@ const page = () => {
   ];
   return (
     <>
-<div className=" h-full bg-gray-900 ">
+<div className=" h-full bg-gray-200 ">
   {websites.map((website, index) => (
     <motion.div
       key={website.id}
@@ -186,7 +186,7 @@ const page = () => {
   initial={{opacity:0,y:100}}
   animate={{opacity:1,y:0}}
   transition={{duration:1.3}}
-  className="fixed bottom-0 left-0 right-0 flex items-center  justify-center h-fit w-full back bg-gray-900 z-50">
+  className="fixed bottom-0 left-0 right-0 flex items-center  justify-center h-fit w-full back z-50">
   <FloatingDock
     mobileClassName=" z-50" 
     desktopClassName='z-50'
