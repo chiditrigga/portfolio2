@@ -9,6 +9,7 @@ import countries from "./images/desktop-preview.jpg";
 import chat from './images/chat.png'
 import phone from './images/phoneT.png'
 import Advice from "./images/advice.jpg";
+import Dashboard from "./images/dashboard.png";
 import { motion } from "framer-motion";
 
 import Link from "next/link";
@@ -151,10 +152,10 @@ export const products = [
   },
  
   {
-    title: "Landing Page",
-    link: "https://ull.vercel.app/",
+    title: "Dashboard",
+    link: "https://dashboard-black-chi.vercel.app/",
     thumbnail:
-      landingg,
+      Dashboard,
   },
 
  
@@ -163,10 +164,16 @@ export const products = [
 
 
   {
-    title: "Countries App",
-    link: "https://countries-pi-two.vercel.app/",
+    title: "Dashboard",
+    link: "https://dashboard-black-chi.vercel.app/",
     thumbnail:
-      countries,
+      Dashboard,
+  },
+  {
+    title: "Dashboard",
+    link: "https://dashboard-black-chi.vercel.app/",
+    thumbnail:
+      Dashboard,
   },
   {
     title: "Chat App",

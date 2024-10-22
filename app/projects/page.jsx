@@ -18,6 +18,7 @@ import Image from "next/image";
 import iphone from '../images/iphone.png'
 import landingg from '../images/landing.png'
 import moviee from '../images/moviee.png'
+import Dashboard from '../images/dashboard.png'
 import countries from "../images/desktop-preview.jpg";
 import chat from '../images/chat.png'
 import phone from '../images/phoneT.png'
@@ -34,11 +35,19 @@ const page = () => {
       github:'https://github.com/chiditrigga/iphoneClone'
     },
     {
+      title: "Dashboard",
+      description: "Next.js, Tailwind, Swiper.js,Recharts",
+      href: "https://dashboard-black-chi.vercel.app/",
+      image: Dashboard,
+      id: 2,
+      github:'https://github.com/chiditrigga/ull/tree/main/ulll'
+    },
+    {
       title: "Landing Page",
       description: "Next.js, Tailwind, Swiper.js",
       href: "https://ull.vercel.app/",
       image: landingg,
-      id: 2,
+      id: 3,
       github:'https://github.com/chiditrigga/ull/tree/main/ulll'
     },
     {
@@ -46,7 +55,7 @@ const page = () => {
       description: "React.js, Tailwind, API, Tanstack Query",
       href: "https://movie-discovery-ql1q.vercel.app/",
       image: moviee,
-      id: 3,
+      id: 4,
       github:'https://github.com/chiditrigga/movie-discovery/tree/main/movie'
     },
     {
@@ -54,7 +63,7 @@ const page = () => {
       description: "Next.js, Tailwind, Tanstack Query, Typescript, ShadCN",
       href: "https://countries-pi-two.vercel.app/",
       image: countries,
-      id: 4,
+      id: 5,
       github:'https://github.com/chiditrigga/countries'
     },
     {
@@ -62,7 +71,7 @@ const page = () => {
       description: "AI Chatbot with OpenAI API, Vercel SDK",
       href: "https://chat-api-iyor.vercel.app/",
       image: chat,
-      id: 5,
+      id: 6,
       github:'https://github.com/chiditrigga/chat-api'
     },
     {
@@ -70,7 +79,7 @@ const page = () => {
       description: "Next.js, Typescript, Tailwind",
       href: "https://phone-tracker.vercel.app/",
       image: phone,
-      id: 6,
+      id: 7,
       github:'https://github.com/chiditrigga/phoneTracker'
     },
   ];
